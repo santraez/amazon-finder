@@ -12,7 +12,7 @@ export default function Home() {
   const handleSearch = async (e) => {
     e.preventDefault()
     const { value } = e.target
-    const url = `http://localhost:3000/api/hello?url=${value}`
+    const url = `https://amazon-finder.vercel.app/api/hello?url=${value}`
     const { data } = await axios.get(url);
     setState(data)
   }
